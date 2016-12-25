@@ -12,6 +12,7 @@
         <module>oio-echo</module>
         <module>nio-echo</module>
         <module>netty-echo</module>
+        <module>netty-http</module>
     </modules>
     <properties>
         <slf4j.version>1.7.16</slf4j.version>
