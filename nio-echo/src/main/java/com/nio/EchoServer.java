@@ -54,6 +54,7 @@ public class EchoServer {
 							accept.register(selector, SelectionKey.OP_READ | SelectionKey.OP_WRITE, ByteBuffer.allocate(1024));
 							accept.write(ByteBuffer.wrap("hello\r\n".getBytes()));
 						}
+						// TODO continue read and read write switch
 						if (next.isReadable()) {
 							SocketChannel channel = (SocketChannel) next.channel();
 							ByteBuffer byteBuffer = (ByteBuffer) next.attachment();
